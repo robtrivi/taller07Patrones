@@ -8,10 +8,11 @@ package ec.edu.espol.reportetaller.builder;
  *
  * @author robes
  */
-public class BuilderExcel extends ReporteBuilder{
+public class BuilderExcel implements ReporteBuilder{
+    private Reporte reporte;
     @Override
     public void definirReporte() {
-        super.reporte = new Excel();
+        this.reporte = new Word();
         //Logica para definirReporte
     }
 
@@ -28,5 +29,9 @@ public class BuilderExcel extends ReporteBuilder{
     @Override
     public void construirPieDePagina() {
         //Logica para construirPieDePagina
+    }
+
+    public Reporte getResult() {
+        return this.reporte;
     }
 }

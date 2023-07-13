@@ -10,7 +10,7 @@ import ec.edu.espol.reportetaller.builder.Reporte;
  *
  * @author robes
  */
-public class ReporteDecorador extends Reporte{
+public abstract class ReporteDecorador extends Reporte{
     private Reporte reporte;
     
     public ReporteDecorador(Reporte reporte){

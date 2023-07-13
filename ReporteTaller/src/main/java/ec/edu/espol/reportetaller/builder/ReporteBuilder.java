@@ -8,12 +8,7 @@ package ec.edu.espol.reportetaller.builder;
  *
  * @author robes
  */
-public abstract class ReporteBuilder {
-    protected Reporte reporte;
-    
-    public Reporte obtenerReporte(){
-        return reporte;
-    }
+public interface ReporteBuilder {
     
     public abstract void definirReporte();
     public abstract void construirEncabezado();

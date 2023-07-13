@@ -8,11 +8,11 @@ package ec.edu.espol.reportetaller.builder;
  *
  * @author robes
  */
-public class BuilderWord extends ReporteBuilder{
-
+public class BuilderWord implements ReporteBuilder{
+    private Reporte reporte;
     @Override
     public void definirReporte() {
-        super.reporte = new Word();
+        this.reporte = new Word();
         //Logica para definirReporte
     }
 
@@ -29,6 +29,10 @@ public class BuilderWord extends ReporteBuilder{
     @Override
     public void construirPieDePagina() {
         //Logica para construirPieDePagina
+    }
+
+    public Reporte getResult() {
+        return this.reporte;
     }
     
 }

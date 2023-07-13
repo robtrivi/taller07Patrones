@@ -11,7 +11,7 @@ package ec.edu.espol.reportetaller.builder;
 public class BuilderExcel extends ReporteBuilder{
     @Override
     public void definirReporte() {
-        super.reporte = new ArchivoReporte();
+        super.reporte = new Excel();
         //Logica para definirReporte
     }
 
